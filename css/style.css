@@ -1,0 +1,364 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box ;
+}
+hr.solid {
+  border-top: 3px solid black;
+ width: 500px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Lora&family=Roboto&display=swap');
+@font-face {
+    font-family: Yipes ;
+    src: url(../Fonts/Yipes.otf);
+}
+h4{
+    font-family: 'Lora', serif;font-weight: bold;font-size: 60px !important;
+  }
+@-webkit-keyframes xoayvong {
+    from{
+            -webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+        }
+      to{
+            -webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+    }
+} 
+.logoweight{
+      width: 60px;
+  }
+.logoweight:hover{
+    animation: xoayvong 2s linear 0s infinite;
+    -webkit-animation: xoayvong 2s linear 0s infinite;
+    -moz-animation: xoayvong 2s linear 0s infinite;
+    -o-animation: xoayvong 2s linear 0s infinite; 
+}
+.icon-bar a{
+    color: black;
+    font-size: x-large;
+}
+h1 {
+    font-family: 'Lora', serif;
+}
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 20px !important;
+ }
+h2:hover{
+    color: tomato;
+    font-weight: bold;
+    font-size: 20px !important;
+}
+h3 {
+    font-size: 12px !important;
+    font-family: "Roboto" serif !important;
+}
+
+.title{
+    width: 450px;
+}
+.hinhdaidien{
+    width: 300px;
+}
+.borderKT {
+    position: relative;
+    width: 420px;
+    height: 420px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border-top: 5px solid #F79500;
+    border-bottom: 5px solid #24B6E0;
+    border-left: 5px solid #F73D89;
+    border-right: 5px solid #67F500;
+    animation: xoayvong 2s linear 0s infinite;
+    -webkit-animation: xoayvong 2s linear 0s infinite;
+    -moz-animation: xoayvong 2s linear 0s infinite;
+    -o-animation: xoayvong 2s linear 0s infinite; }
+.navbar-nav{
+    font-family: "Roboto" serif;
+    font-weight: 700;
+}
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 5px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    margin-top: 240px;
+  }
+  
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+    top: 20px;
+    font-size: 32px !important;
+    background-color: #310000;
+    color: #F79500 !important;
+    border: 3px solid #F79500;
+  }
+  
+  #blog {
+    top: 100px;
+    font-size: 32px !important;
+    background-color: #220212; /* Blue */
+    color: #F73D89 !important;
+    border: 3px solid #F73D89;
+  }
+  
+  #projects {
+    top: 180px;
+    font-size: 32px !important;
+    background-color: #001D34; /* Red */
+    color: #24B6E0 !important;
+    border: 3px solid #24B6E0;
+  }
+  
+  #contact {
+    top: 260px;
+    font-size: 32px !important;
+    background-color: #0A1701 /* Light Black */;
+    color: #67F500 !important;
+    border: 3px solid #67F500;
+  }
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%; /* Full width */
+    padding: 17px; /* Some padding */ 
+    border: 1px solid snow; /* Gray border */
+    border-radius: 4px; 
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    /* margin-top: 6px; Add a top margin */
+    /* margin-bottom: 16px; Bottom margin */
+    resize: vertical ;
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #24B6E0;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 12px;
+   
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #F73D89;
+  }
+  
+/* Container needed to position the overlay. Adjust the width as needed */
+.connect {
+    position: relative;
+    width: 50%;
+  }
+  
+  /* Make the image to responsive */
+  .image {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    
+  }
+  
+  /* The overlay effect (full height and width) - lays on top of the container and over the image */
+  .overlay {
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    left: 0;
+    right: 22px;
+    background-color: #24B6E0;
+    opacity: 0.92;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+  
+  /* When you mouse over the container, the overlay text will "zoom" in display */
+  .connect:hover .overlay {
+    transform: scale(1);
+  }
+  
+  /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+  .text {
+    color: black;
+    font-weight: bold;
+    font-family: "Roboto", serif;
+    font-size: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  /* Style tab links */
+  .tablink {
+    background-color: white;
+    font-family: "Lora",serif;
+    /* font-weight: bold; */
+    font-size: 40px !important;
+    color: rgba(0, 0, 0, 0.836);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: rgb(219, 219, 219);
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: auto;
+  }
+  
+  #Ai {background-color: #F79500;}
+  #Id {background-color: #F73D89;}
+  #Ps {background-color: #24B6E0;}
+  #Dw {background-color: #67F500;}
+
+  /* skill */
+  body {
+    display: grid;
+    height: 100vh; 
+    place-items: center;
+    background: #243b47;
+  }
+  
+  .dashboard {
+    display: flex;
+  }
+  
+  svg {
+    width: 114px;
+    height: 114px;
+    margin: 1em;
+  }
+  
+  .bg {
+    fill: none;
+    stroke-width: 10px;
+    stroke: #1A2C34;
+  }
+  
+  [class^="meter-"] {
+    fill: none;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    
+  }
+  
+  .meter-1 {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 100;
+    stroke: #F79500;
+    animation: progress-1 7s infinite;
+  }
+  .meter-2 {
+    stroke: #F73D89;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 160;
+    animation: progress-1 7s infinite ;
+  }
+  .meter-3 {
+    stroke: #24B6E0;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 120;
+    animation: progress-3 7s infinite ;
+  }
+  .meter-4 {
+    stroke: #67F500;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 80;
+    animation: progress-4 7s infinite ;
+  }
+  
+  @keyframes progress-1 {
+      from {
+          stroke-dashoffset: 360;
+      }
+      to {
+          stroke-dashoffset: 100;
+      }
+  }
+  
+  @keyframes progress-2 {
+    from {
+      stroke-dashoffset: 360;
+    }
+    to {
+      stroke-dashoffset: 160;
+    }
+  }
+  
+  @keyframes progress-3 {
+    from {
+      stroke-dashoffset: 360;
+    }
+    to {
+      stroke-dashoffset: 120;
+    }
+  }
+  @keyframes progress-4 {
+    from {
+      stroke-dashoffset: 360;
+    }
+    to {
+      stroke-dashoffset: 80;
+    }
+  }
+  .box1{
+    width: 285px;
+    height: 350px;
+    padding: 0 15px;
+   
+  }
+  .containerp{
+    width: 792px;
+    height: auto;
+  }
+  .ft-b{
+    
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 32px 32px;
+    background: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
